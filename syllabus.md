@@ -1,4 +1,4 @@
-<a href="ece.stevens.edu>
+<a href="ece.stevens.edu">
   <img src="assets/RUshield.webp" width="128"/>
 </a>
 
