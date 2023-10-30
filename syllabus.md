@@ -1,4 +1,4 @@
-<a href="https://ece.stevens.edu">
+<a href="https://ece.rutgers.edu">
   <img src="assets/RUshield.webp" width="128"/>
 </a>
 
