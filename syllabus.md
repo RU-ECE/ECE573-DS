@@ -2,7 +2,7 @@
   <img src="assets/RUshield.webp" width="128"/>
 </a>
 
-# CPE-593 Applied Data Structures and Algorithms
+# ECE-573 Data Structures and Algorithms
 
 * 2023 Spring
 * **Instructor:**  [Dov Kruger](https://www.ece.rutgers.edu/Dov-Kruger)
