@@ -5,8 +5,8 @@
 # CPE-593 Applied Data Structures and Algorithms
 
 * 2023 Spring
-* **Instructor:**  [Dov Kruger](https://ece.rutgers.edu/Dov-Kruger)
-* **[Meeting Times and Office hours]()
+* **Instructor:**  [Dov Kruger](https://www.ece.rutgers.edu/Dov-Kruger)
+* **[Meeting Times and Office hours](https://bit.ly/3Ql9mpl)
 * **[Resources](ref)**
 * **[Course Web Address](https://github.com/RU-ECE/ECE573-DB)**
 
