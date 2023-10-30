@@ -6,11 +6,11 @@
 
 * 2023 Spring
 * **Instructor:**  [Dov Kruger](https://www.ece.rutgers.edu/Dov-Kruger)
-* **[Meeting Times and Office hours](https://bit.ly/3Ql9mpl)
+* **[Meeting Times and Office hours](https://bit.ly/3Ql9mpl)**
 * **[Resources](ref)**
 * **[Course Web Address](https://github.com/RU-ECE/ECE573-DB)**
 
-** Prerequisites** 		
+**Prerequisites** 		
 This course requires a good command of C++.
 You will have to write algorithms and debug them.
 
