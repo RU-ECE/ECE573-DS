@@ -1,4 +1,6 @@
-<img src="assets/RUshield.webp" width="128"/>
+<a href="ece.stevens.edu>
+  <img src="assets/RUshield.webp" width="128"/>
+</a>
 
 # CPE-593 Applied Data Structures and Algorithms
 
