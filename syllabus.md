@@ -1,4 +1,4 @@
-[<img src="RUshield.webp" alt="Rutgers University">](http://rutgers.edu/)
+[<img src="assets/RUshield.webp" alt="Rutgers University">](http://rutgers.edu/)
 # CPE-593 Applied Data Structures and Algorithms
 * 2023 Spring
 * **Instructor:**  [Dov Kruger](https://RU-ece/DovKrugerCourses/DovKrugerBio.md)
