@@ -5,14 +5,14 @@
 # CPE-593 Applied Data Structures and Algorithms
 
 * 2023 Spring
-* **Instructor:**  [Dov Kruger](https://RU-ece/DovKrugerCourses/DovKrugerBio.md)
+* **Instructor:**  [Dov Kruger](https://github.com/RU-ece/DovKrugerCourses/DovKrugerBio.md)
 * **[Meeting Times and Office hours]()
-* **[Resources](https://RU-ece/DovKrugerCourses/DovKrugerBio.md)**
+* **[Resources](ref)**
 * **[Course Web Address](https://github.com/RU-ECE/ECE573-DB)**
-** Prerequisites** 		
-Good command of C++.
-You will have to write algorithms and debug them.
 
+** Prerequisites** 		
+This course requires a good command of C++.
+You will have to write algorithms and debug them.
 
 ## COURSE DESCRIPTION
 
