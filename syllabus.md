@@ -4,7 +4,7 @@
 
 # ECE-573 Data Structures and Algorithms
 
-* 2023 Spring
+* 2024 Spring
 * **Instructor:**  [Dov Kruger](https://www.ece.rutgers.edu/Dov-Kruger)
 * **[Meeting Times and Office hours](https://bit.ly/3Ql9mpl)**
 * **[Resources](ref)**
