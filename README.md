@@ -1,4 +1,4 @@
-# CPE 593
+# ECE 573 Data Structures
 
 The documentation for this course is being moved into markdown in this repo.
 However, since it's a work in progress, for the interim, here is the link to the old directory on google drive:
