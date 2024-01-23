@@ -4,7 +4,7 @@
 
 # ECE-573 Data Structures and Algorithms
 
-* 2023 Spring
+* 2024 Spring
 * **Instructor:**  [Dov Kruger](https://www.ece.rutgers.edu/Dov-Kruger)
 * **[Meeting Times and Office hours](https://bit.ly/3Ql9mpl)**
 * **[Resources](ref)**
@@ -18,20 +18,22 @@ You will have to write algorithms and debug them.
 
 Applied Data Structures and algorithms is an intensive introduction to brilliant solutions to classical problems with wide application across computer programming.  Using great solutions and approaches you can write programs that are far faster and more efficient. We cover:
 
-* Analysis of algorithms (complexity)
-* Dynamic arrays
-* Linked lists, Stacks and Queues
-* Trees: binary, RB Tree, BTree, Trie
-* Hashing
-* Sorting (Insertion, Quicksort, Heapsort, Mergesort)
-* Searching (binary, golden mean)
-* String algorithms including Boyer-Moore, finite state machines and LCS
 * Families of optimal approaches to solve problems (like divide and conquer)
 * Use dynamic programming to avoid redundant computation
-* Use matrix algorithms to solve systems of linear equations in a numerically stable manner
-* Use backtracking to search a large set of solutions
-* Introduction to Graph Theory (DFS, BFS, Bellman-Ford, Floyd-Warshal, Prim, Kruskal, TSP)
-* Solve classic number-theoretic problems like computing prime numbers, Eratosthenes’ sieve, Prime number wheel
+* Week 1: Analysis of algorithms (complexity)
+* Week 2: Dynamic arrays
+* Week 3: Linked lists, Stacks and Queues
+* Week 4: Trees: binary, RB Tree, BTree, Trie
+* Week 5: Hashing
+* Week 6: Sorting (Insertion, Quicksort, Heapsort, Mergesort)
+* Week 7: Searching (binary, golden mean)
+* midterm
+* Week 9: String algorithms including Boyer-Moore, finite state machines and LCS
+* Week 10: Matrix algorithms
+* Week 11: Backtracking to search a large set of solutions
+* Week 12: Introduction to Graph Theory (DFS, BFS, Bellman-Ford, Floyd-Warshal, Prim, Kruskal, TSP)
+* Week 13: Number-theoretic problems
+  * Primality testing, Eratosthenes’ sieve, Prime number wheel
 * Compute Fermat and Miller-Rabin probabilistic prime number algorithms, learn about AKS
 * Identify the theoretical and practical weaknesses in RSA encryption
 * Numerical algorithms: root finding, interpolation, integration
