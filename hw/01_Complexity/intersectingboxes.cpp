@@ -2,6 +2,8 @@
   Complexity Practice Assignment: Find overlapping boxes
   Complete the following code
   Read in a list of boxes expressed as x y w h
+  x and y are the top-left corner of the box,
+  w and h are its width and height
   Some boxes may intersect with others
 
   Display the ordinal position of each box which intersects
@@ -26,6 +28,12 @@ int main() {
     boxes.emplace_back(x, y, w, h); // create a list of all boxes
   }
   uint64_t intersecting = 0;
+
+  //this just shows how you iterate through the boxes
+  // now you write the code to check for intersections
+  for (uint32_t i = 0; i < boxes.size(); i++) {
+    cout << boxes[i].x << " " << boxes[i].y << " " << boxes[i].w << " " << boxes[i].h << endl;
+  }
     //TODO add your code here
 
 
