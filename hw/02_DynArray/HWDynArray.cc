@@ -11,7 +11,12 @@ private:
 		//TODO: YOU IMPLEMENT THIS
 	}
 public:
+	//write constructor, destructor
+
+	//copy constructor + 10%
+	//double ended?  + 20% (SEE circularbuffer)
 	void addEnd(int v) {
+		
 		
 	}
 
@@ -25,15 +30,16 @@ public:
 	void removeEnd() {
 
 	}
+	uint32_t getSize() const {
+		return size;
+	}
+	
 };
 
 int main() {
-	HWDynArray a(500); // empty list, with 500 elements
-    uint32_t n;
-    cout << "Enter an integer: ";
-    cin >> n;
-
-	for (int i = 0; i < 500; i++)
+	GrowArray a(5); // empty list, with 500 elements
+	const int n = 10;
+	for (int i = 0; i < n; i++)
 		a.addEnd(i); // really fast!
 
 	for (int i = 0; i < n; i++)
