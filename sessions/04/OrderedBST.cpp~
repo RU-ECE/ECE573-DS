@@ -1,0 +1,23 @@
+class BST {
+private:
+	class Node {
+		public:
+    int val;
+		Node* left;
+		Node* right;
+		Node(int v) : val(v), left(nullptr), right(nullptr) {}
+	};
+	Node* root;
+
+public:
+	BST() : root(nullptr) {}
+
+	void add(int v) {
+		if (root == nullptr) {
+			root = new Node();
+			root->val = v;
+			root->left = nullptr;
+			root->right = nullptr;
+		}
+	}
+};

@@ -1,0 +1,38 @@
+/* 10 9 8 7 6 5 4 3 2 1
+pivot=6
+   i                  j
+   
+
+
+
+ */
+
+int partition(int x[], int L, int R) {
+	int r = random(L, R);
+	int pivot = x[r];
+	int i = L, j = R;
+	while (i < j) {
+		while (x[i] < pivot)
+			i++;
+    while (x[j] > pivot)
+			j--;
+		if (i < j)
+      swap(x[i++], x[j--]);		
+	}
+	return i;
+}
+
+
+// sort array x between positions L and R
+void quicksort(int x[], int L, int R) {
+	int m = partition(x, L, R);
+	if (m>L)
+		quicksort(x, L, m);
+	if (R > m+1)
+		quicksort(x, m+1, R);
+}
+
+int main() {
+	int[] a = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+	quicksort(a, 0, 9);
+}

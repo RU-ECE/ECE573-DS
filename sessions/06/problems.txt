@@ -1,0 +1,8 @@
+1. What is the complexity of
+  a. insertion sort on a random array? O(n^2)
+  b. insertion sort on an array where 50% of the elements are sorted? O(n^2)
+  c. insertion sort on an array where 10 of the elements are out of order?
+  O(n)
+  d. quicksort for pivot = X[L] on a sorted array
+  O(n^2)
+

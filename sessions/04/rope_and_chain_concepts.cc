@@ -5,7 +5,7 @@ class Rope {
         node* left;
         node* right;
 
-    }
+    };
 
 };
 
@@ -30,7 +30,7 @@ class Chain {
     struct node {
         node* next[4];
         string line; // the letter!
-        int size; // size of the left subtree
+        uint32_t size; // size of the left subtree
     };
 
     vector<range> viewers;
