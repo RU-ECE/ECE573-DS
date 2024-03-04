@@ -1,3 +1,45 @@
+/*
+	2 + 3 ==> 5
+  cout << (2 + 3)
+
+  x + 0 ==> x
+  x - x ==> 0
+  x * 0 ==> 0
+  x * 1 ==> x
+
+  x * 2 ==> x + x  
+//this is only for integers  x * 32 ==> x << 5
+
+  x * 2 + x * 3 ==> x * 5
+
+
+  x * 2  + 4 + y + x * 3 ==> x * 5
+  x * 2 + 3 * x ==> 5 * x
+
+
+  const double c1 = 1.5;
+  const double c2 = 2.8;
+
+  double z = c1 * x * c2; // (c1*c2) * x;
+	g++ -O3  "unsafe floating point optimization"
+
+  integrate(...) ??
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
 #include <iostream>
 using namespace std;
 class Expr {
@@ -61,8 +103,8 @@ int main() {
 	e4->setVar("x", 2);
 	test(e3);
 
-	Expr* e10 = parse_postorder("5 6 + 2 x * *");
+	Expr* e10 = parse_postorder("5.2 6 + 2 x * *");
 	test(e10);
 	Expr* e11 = parse_postorder("5 x cos *");
-	test(e11);
+ 	test(e11);
 }
