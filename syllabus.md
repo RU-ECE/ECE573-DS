@@ -63,7 +63,6 @@ After successful completion of this course, students will be able to
 
 ## COURSE REQUIREMENTS
 * **Attendance:**	Attendance is crucial for an effective learning but will not be graded. Your work will speak for itself.
-For F1 visas however, attendance is required so I will take attendance at least once. This may be in the form of a quiz.
 * **Homework:** 	Coding assignments will be submitted via canvas for individual single files, or via github.
 
 ## GRADING PROCEDURES
