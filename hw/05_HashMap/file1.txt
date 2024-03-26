@@ -1,0 +1,7 @@
+hello   -->  5125
+a       -->  1002
+this is -->  91295129
+a test  -->  91295129
+byebye
+12345
+going

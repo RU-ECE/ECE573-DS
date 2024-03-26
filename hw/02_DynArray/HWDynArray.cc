@@ -15,39 +15,39 @@ public:
 
 	//copy constructor + 10%
 	//double ended?  + 20% (SEE circularbuffer)
-	void addEnd(int v) {
+	void addEnd(int v) { //O(____________)
 		
 		
 	}
 
-	void addStart(int v) {
+	void addStart(int v) { //O(____________)
 
 	}
-	void removeStart() {
+	void removeStart() { //O(____________)
 
 	}
 	
-	void removeEnd() {
+	void removeEnd() { //O(____________)
 
 	}
-	uint32_t getSize() const {
+	uint32_t getSize() const { //O(____________)
 		return size;
 	}
 	
 };
 
 int main() {
-	GrowArray a(5); // empty list, with 500 elements
+	GrowArray a(5); // empty list, with 5 elements
 	const int n = 10;
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < n; i++)   //O(____________)
 		a.addEnd(i); // really fast!
 
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < n; i++)    //O(____________)
 		a.addEnd(i); // every time you need to grow, double
 
 	a.addStart(5);
 	
-	for (int i = 0; i < n/2; i++)
+	for (int i = 0; i < n/2; i++) //O(____________)
 		a.removeEnd();
 
 	for (int i = 0; i < n/2; i++)

@@ -1,0 +1,36 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+/*
+	dict.txt is located in the data directory of the repo
+	load all the words into the trie
+
+	
+
+
+ */
+class Trie {
+public:
+	Trie(const char dict[]) {
+
+	}
+	bool is_word(const char word[]) {
+
+	}
+};
+
+int main() {
+	Trie t("dict.txt"); // load dict.txt from the current directory
+	
+	ifstream f("triespellcheck.txt");
+	char word[256];
+	int count = 0;
+	while (f.getline(buffer)) {
+		if (!t.is_word(word))
+			cout << word << '\n';
+		if (t.starts_with(word))
+			cout << "startswith: " << word << '\n';
+	}
+	return 0;
+}

@@ -4,7 +4,7 @@
 using namespace std;
 
 /*
-    Author: Dov Kruger
+    Author: Dov Kruger, put both authors!
     cite: helped by the whole class!
      Some even typed in vscode
 
@@ -74,7 +74,7 @@ public:
         size--;
     }    
     void removeStart() {
-        
+
     }
     friend ostream& operator <<(ostream& s, const BadDynamicArray& list) {
         for (int i = 0; i < list.size; i++)

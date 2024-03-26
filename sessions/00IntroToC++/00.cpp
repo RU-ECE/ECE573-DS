@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cmath>
+
+// std::cout
+using namespace std;
+
+uint64_t factorial(uint64_t n) {
+  if (n == 0 || n == 1) {
+    return 1;
+  }
+  return n*factorial(n - 1);
+}
+
+uint64_t count(uint64_t n) {
+    if (n == 0)
+        return 0;
+    return 1+count(n-1);
+}
+
+int x = 0;
+int main()
+{
+    uint32_t a = 1234567890U; // u32
+    uint64_t b = 123'456'789'012'345'678ULL;
+    uint8_t c;
+    uint16_t d;
+
+    // signed
+    int8_t e;
+
+    cout << x << a << b << c << d << e << '\n';
+    for (int i = 0; i < 50; i++) {
+			cout << i << '\t' << factorial(i) << '\n';
+    }
+    return 0;
+}
