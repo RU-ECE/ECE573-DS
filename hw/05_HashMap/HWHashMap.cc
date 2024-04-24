@@ -25,7 +25,7 @@ int main() {
 	int id;
 
 	cout << "\n\nLinear probing\n";
-	const char words[] = {"apple", "bear", "cat", "dog", "arggg", "juwqehtrkqwejhr", "underbishop", "ting", "wonderwall"};
+	const char words[] = {"apple", "bearable", "cat", "dog", "arggg", "juwqehtrkqwejhr", "underbishop", "ting", "wonderwall"};
 	for (int i = 0; i < sizeof(words[i])/sizeof(char*); i++) {
 		bool found = m1.get(words[i], &id);
 		cout << "word " << words[i] << " " << found << "id=" << id << '\n';
