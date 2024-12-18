@@ -37,7 +37,7 @@ public:
 };
 
 int main() {
-	GrowArray a(5); // empty list, with 500 elements
+	GrowArray a(5); // empty list, with 5 elements
 	const int n = 10;
 	for (int i = 0; i < n; i++)   //O(____________)
 		a.addEnd(i); // really fast!

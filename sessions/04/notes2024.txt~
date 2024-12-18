@@ -1,0 +1,40 @@
+z = 2 * x + y * y
+
+root
+     \
+        +
+      /    \
+    *        *
+   / \      / \
+  2   x    y   y
+
+
+2 * x + y * y
+
+
+((a + b) * (c + d))
+
+int x = 3 / 2 * 2 + 4*x;
+
+
+(2 + x) * (y + y)
+2 x + y y + *   RPN (postorder)
+* + 2 x + y y   preorder   LISP
+
+
+(mul (add 5 4) (add 6 x))
+
+
+                  5
+		 /  \
+		3    11
+	      2  4  /  \
+	    1      9    57
+	              /
+		     25
+
+print this tree inorder: 1 2 3 4 5 9 11 25 57
+print this tree preorder: 5 3 2 1 4 11 9 57 25
+
+map<string, int> dict; //  if you want a dictionary of words IN ORDER, use a TREE
+
