@@ -1,0 +1,34 @@
+class Graph {
+private:
+	// your implementation
+	void DFSinternal(int v, bool visited[]) { //O(V^2)
+		// do what you want
+		cout << v << ' ';
+		visited[v] = true;
+		for (each a adjacentTo(v)) {
+			if (NOT visited[a]) {
+				DFSinternal(a, visited);
+			}
+		}
+							 
+	}
+public:
+	Graph() { }
+	void DFS(int startV) {
+		bool visited[V]; // set all visited = false
+		DFSinternal(start, visited);
+	}
+	void iterativeDFS(int startv) {
+		stack<int> todo;
+		todo.push(startv);
+
+		while (todo.notEmpty()) {
+      int v = todo.pop(); // get the next one off the todo list
+			foreach a adjacentTo(v)
+				if (not visited[a])
+					todo.push(a)
+						
+
+		}
+	}
+}
