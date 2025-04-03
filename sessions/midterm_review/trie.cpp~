@@ -1,0 +1,16 @@
+class trie {
+private:
+  struct node {
+    node* next[26]; //0=a, 1=b, ... , 25=z
+    bool is_word;
+  };
+  node root;
+public:
+  void insert(const string& s) {
+    node* p = &root;
+    for (int i = 0; i < s.length(); i++) {
+        uint32_t offset = s[i] - 'a';
+    	if (offset > 25)
+      	   throw "AAAAAAAAGGGH";
+    	if (p->next[offset]
+  }

@@ -69,6 +69,35 @@ void quicksort(int a[], int L, int R) {
         quicksort(a, i, R);
 }
 
+// 7 9 8 10 6 5 4 1 2 3
+// pivot = random =4
+// put pivot to one side
+// 7 9 8 10 6 5 3 1 2 4
+// i                j p
+// 4                  7
+// p i              j
+// 2                4
+//   i            j p
+//   4              9
+//   p i          j
+//   1            4
+//     4          8
+//     3        4
+//       4      10
+// 2 1 3 4 6 5 10 8 9 7
+//[2 1 3] [6 5 10 8 9 7]           
+void quicksort_lomuto(int a[], int L, int R) {
+    int i = L, j = R;
+    int pivot = a[L+rand()%(R-L+1)];
+// partition lomuto...
+
+    if (i-1 > L)
+        quicksort(a,L, i-1); // check edge conditions!!!
+    if (R > i)
+        quicksort(a, i, R);
+}
+
+
 void partial_quicksort(int a[], int L, int R) {
 #if 0
 if (i-1 > L + 100)
@@ -106,4 +135,73 @@ int main() {
     for (int i = 0; i < 5; i++)
       cout << a3[i] << '\t';
     cout << '\n';
+}
+
+/*
+
+1 2 3 4 5 6 7 8 9 3
+
+
+                1
+        2                3
+      4    5           6   7 
+     8 9  3
+
+
+                9
+        8                7
+      4    5           6   3 
+     2 1  3
+
+     9 8 7 4 5 6 3 2 1 3
+
+                7
+        5                6
+      4   3           1   3 
+     2   
+n = 9
+
+n=8
+                      7  8  9
+
+*/
+
+// merge 2 arrays a,b of size n into c[2n]
+//                   1 3   2 5
+//                   i     j
+// c=1 2 3 5
+//   k
+
+// 
+//   a = [1 2]   b = [3 4]
+//        i           j
+void merge(intc[], const int a[], const int b[], int c[], int n) {
+  int i = 0, j = 0, k = 0;
+  while (i < n && j < n) {
+    if (a[i] > b[j]) {
+        c[k++] = b[j++];
+    } else {
+        c[k++] = a[i++];
+    }
+  }
+  while (i < n)
+    c[k++] = a[i++];
+  while (j < n)
+    c[k++] = b[j++];  
+//  c[k++] = a[i] > b[j] ? b[j++] : a[i++];
+}
+
+// 2 1   3 4    6 4    9 8
+// 1 2   3 4    4 6    8 9
+// 1 2   3 4
+
+
+// n bits
+// 0 0 1 0 1 1 0 1 1 0 0 0 1 0 1
+// 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1
+void radix(int a[], int n) {
+  int hist[10] = {0};
+  for (int i = 0; i < n; i++)
+    hist[a[i]]++;
+
 }
