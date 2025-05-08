@@ -1,0 +1,254 @@
+1. Write a class to implement a dynamic array with capacity (size of memory), size (the number of elements in the list), and a pointer to the list
+
+class DynamicArray {
+private:
+   data;
+   capacity; //the size of teh block in memory
+   size;     // the size of the array that is used
+};
+
+function newlist(cap) 
+  data = new int(cap) // create new block of memory with capacity integers...
+  capacity = cap
+  size = 0
+end
+
+function addEnd(list, v) 
+  if size >= capacity // need to grow!
+    int[] old = data // keep track of old data
+    data = new int(cap*2)
+
+//    memcpy(data, old, capacity * size(int))
+    for (i = 0; i < capacity; i++)
+      data[i] = old[i]
+    capacity = 2*capacity
+  end
+  data[size] = v
+  size = size + 1
+end
+
+mylist = newlist(1024)
+
+
+2. Write pseudocode to sort an array using heapsort
+a = [1 9 6 14 12 7 4 19]
+     0 1 2 3  4  5 6 7
+
+          1
+      9      6
+    14  12 7  4
+   19
+
+a = [1 2 3 4 5 6 7 8 9]
+     0 1 2 3 4 5 6 7 8
+    left = 2i+1
+    right = 2i+2
+
+         8
+     5         7
+  4    1    6    3
+2
+
+
+
+maxheap
+     1            3
+   2   3   ==>  2   1
+
+
+
+         6
+     5         3
+  4    1    2    7
+8
+
+3 5 6 4 1 2 | 7  8
+
+
+heapsort(a, n) {
+  for (i = n/2; i >= 0; i--)
+    makesubheap(a, i, n)
+  end  
+  for (i = n-1; i > 0; i--)
+    swap(a[i], a[0]) // move the biggest element to the end
+    makesubheap(a, 0, i)
+  end
+}
+
+// a is the array, i is the position of the subtree, and n = size
+void makesubheap(int a[], int i, int n)
+   if i >= n // standard way of terminating recursive functions
+     return
+   end
+   left = 2i+1
+   right = 2i+2
+   if right < n
+   if a[left] > a[right] // this will crash if out of bounds, on the test, explicitly allowed, but bonus if you get it right
+     if a[left] > a[i]
+       swap(a[left], a[i])
+       if left < n //optional alternate way of terminating the recursion
+         makesubheap(a, left, n) // recursive call (required)
+       end
+     else 
+       swap(a[right], a[i])
+       if right < n
+         makesubheap(a, right, n) // recursive call (required)
+       end
+     end
+    else if left < n  // special case for only left child
+     if a[left] > a[i]
+       swap(a[left], a[i])
+       if left < n //optional alternate way of terminating the recursion
+         makesubheap(a, left, n) // recursive call (required)
+       end      
+    else // no children
+    end
+end
+
+// a = [9 8 7 6 4 3 2 1]
+        i             j
+    //pivot = 4
+//Hoare, Lomuto
+void quiksort(a, L, R) {
+  pick = rand(L, R)
+  pivot = a[pick]
+  i = L, j = R
+  while i < j do
+    while a[i] < pivot
+      i = i + 1
+    end 
+    while a[j] > pivot 
+      j = j - 1
+    end
+    if i < j
+      swap(a[i], a[j])
+      i++ // this is optional, the algorithm will work either way
+      j--
+    end     
+  end
+
+  end
+
+}
+
+a = [ 2,1........................................... ] size=need
+temp[ 1,2 ...                                        ]
+
+
+
+a = [1 3 6 8]    b= [2 2 7 9]     c=[1, 2, 2, 3, 6, 7, 8, _]
+             i             j                              k
+merge(int c[], int a[] , int b[], int n ) {
+    int i = 0, j = 0, k = 0;
+    while i < n and j < n
+      if a[i] < b[j]
+        c[k] = a[i]
+        i = i + 1
+      else
+        c[k] = b[j]
+        j = j + 1
+      end 
+    end
+    while i < n
+      c[k] = a[i++]
+    end
+    while j < n
+      c[k] = b[j++]
+    end
+}
+
+//not required on midterm
+mergesort(a) // O(n log n)
+  tmp<-- new int [same size as a] // storage = O(n)
+  for (i = 1; i < n; i *= 2) //O(log n)
+    for (j = 0; j < n; j += 2i) // O(n)
+      merge(tmp, a+j, a+j+n)
+    end
+    swap(a, tmp)
+  end
+end
+
+
+
+
+4. Complexity
+What is the complexity of...
+
+for i = 17; i  <n/2; i += 3   //O(n)
+  for j = 0; j  < i; j += 2   //O(n)
+    ;
+
+    O(n)
+for (int i = n; i > 1; i /= 3) // O(log3 n) = O(log n)
+  for (int j = 0; j < i; j++)  
+
+
+for (int i = 1; i < n; i *= 2)
+  for (int j = 0; j < i; j++)    // 1 + 2 + 4 + 8 + ... + n/2
+
+n=32
+1+2+4+8+16 = 31
+
+
+//O(n) omega(1)
+function f(n)
+  if n < 19
+    return n/2
+  end
+  return 2*f(n-1) + 1
+end
+
+
+//O(log n  ) omega( 1  )
+function f(n)
+  if n < 19
+    return n+54
+  end
+  return f(n/2) + n
+end
+
+//O( 3^n ) omega(1 )
+function f(n)
+  if n < 19
+    return n+54
+  end
+  return f(n-1) + f(n-2) + f(n-3)
+end
+
+
+
+
+function koch(level, x1, y1, x2, y2) {
+    if level <= 0
+      return
+    end
+   mid = ....
+   p1_3 = ....
+   p2_3 = ....
+   koch(x1,y1, p1_3.x,p1_3.y)
+   koch(p1_3.x,p1_3.y, mid.x, mid.y)
+   koch(mid.x, mid.y, p2_3.x,p2_3.y)
+   koch(p2_3.x,p2_3.y, x2, y2)
+}
+
+
+struct Node {
+    int val;
+    Node* left;
+    Node* right;
+}
+
+void inorder(Node root) {
+    if (root == nullptr)
+      return
+    inorder(root->left);
+    cout << root->val;
+    inorder(root->right);      
+}
+
+
+
+
+
+
+
